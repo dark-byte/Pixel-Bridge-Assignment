@@ -1,5 +1,5 @@
 :root{
-    --blue: #1e78ff;
+    --blue: #377cd7;
 }
 
 *
@@ -96,11 +96,15 @@ nav{
     display: flex;
     background-color: #121212;
     color: #fff;
-    padding: 80px 10px;
+    padding: 80px 100px;
     flex-direction: column;
 }
 
-.section-3 p{
+.section-3-top{
+    margin-left: 120px;
+}
+
+.first-p{
     color: #5d5d5d;
     font-weight: 400;
     margin-bottom: 50px;
@@ -115,7 +119,100 @@ nav{
     color: #5d5d5d;
 }
 
+.multi-text h2{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 0 70px;
+    margin: 20px;
+    background: rgb(131, 131, 131);
+    background: linear-gradient(180deg, rgb(71, 71, 71) 0%, rgba(18, 18, 18, 1) 61%, rgba(18, 18, 18, 1) 100%);
+}
+
+.card img{
+    max-height: 50px;
+}
+
+.card h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 1rem;
+    text-align: center;
+    color: #c4c4c4;
+}
+
+.card a{
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+.section-4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 100px 200px;
+}
+
+.section-4 h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.blog-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.blog-card-container >*{
+    margin-right: 20px;
+}
+.blog-card{
+    max-width: 300px;
+}
+.blog-card-container img{
+    max-height: 300px;
+}
+
+.blog-card h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+hr{
+    margin: 0 20px;
+    background-color: #b3b2b2;
+}
+
+span{
+    color: #a9a9a9;
+    font-size: 12px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -141,5 +238,33 @@ nav{
     .section-2-div p{
         margin: 0;
         font-size: 1rem;
+    }
+    .section-3{
+        padding: 80px 10px;
+    }
+    .section-3-top{
+        margin-left: 0px;
+    }
+    .card{
+        max-width: 80vw;
+    }
+
+    .section-4 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 100px 20px;
+    }
+
+    .section-4 h1 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    .blog-card {
+        max-width: 100%;
+    }
+    .blog-card-container img {
+        width: 100%;
+        object-fit: cover;
     }
 }
