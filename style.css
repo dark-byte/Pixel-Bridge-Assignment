@@ -11,7 +11,7 @@
 a{
     text-decoration: none;
     color: #5d5d5d;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 li{
@@ -25,7 +25,7 @@ li{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 20px 40px;
     backdrop-filter: blur(10px);
     background-color: #ffffffa2;
     position: sticky;
@@ -34,7 +34,7 @@ nav{
 
 .hero{
     max-width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,8 @@ nav{
 }
 
 .hero h1{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
 }
 
 .hero .light{
@@ -54,6 +55,7 @@ nav{
     background: rgb(30, 120, 255);
     background: linear-gradient(180deg, rgba(30, 120, 255, 1) 0%, rgba(30, 120, 255, 1) 37%, rgb(81, 147, 246) 100%);
     color: white;
+    font-size: 1.2rem;
     padding: 15px 25px;
     border-radius: 30px;
     margin-top: 30px;
@@ -102,6 +104,20 @@ nav{
 
 .section-3-top{
     margin-left: 120px;
+}
+
+.globe-img{
+    max-height: 40px;
+    max-width: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color:white;
+    -webkit-mask-image: url(http://d1x590duoossbi.cloudfront.net/Icon/24/line/network.svg);
+    mask-image: url(http://d1x590duoossbi.cloudfront.net/Icon/24/line/network.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 .first-p{
@@ -202,11 +218,14 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
+    padding-bottom: 80px;
 }
 
 hr{
     margin: 0 20px;
-    background-color: #b3b2b2;
+    height: 2px;
+    background-color: #e9e9e9;
+    border: none;
 }
 
 span{
@@ -225,9 +244,15 @@ span{
     .hero h1 {
         font-size: 1.8rem;
     }
+    .hero button {
+     font-size: 1rem;   
+     padding: 10px 20px;
+     border-radius: 30px;
+    }
 
     .section-2{
         justify-content: start;
+        padding-left: 20px;
     }
     .section-2-div{
         display: block;
@@ -237,7 +262,9 @@ span{
     }
     .section-2-div p{
         margin: 0;
-        font-size: 1rem;
+        margin-top: 10px;
+        font-size: 14px;
+        max-width: 100%;
     }
     .section-3{
         padding: 80px 10px;
